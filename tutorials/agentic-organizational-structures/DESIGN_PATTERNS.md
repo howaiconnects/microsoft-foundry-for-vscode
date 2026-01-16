@@ -507,10 +507,10 @@ Is team lead managing >10 agents?
 
 ## 🔗 Related Resources
 
-- [AI Foundry Agent Schema](../../schema/agent/1.0.0/schema.json)
-- [Sample Agents](../../samples/agents/)
-- [Level 1: Single Agent](../level-1-single-agent/)
-- [Level 6: Full Integration](../level-6-n8n-integration/)
+- [AI Foundry Agent Schema](https://aka.ms/ai-foundry-vsc/agent/1.0.0)
+- [Sample Agents in Repository](../../samples/agents/)
+- [Level 1: Single Agent](./level-1-single-agent/)
+- [Level 6: Full Integration](./level-6-n8n-integration/)
 
 ---
 

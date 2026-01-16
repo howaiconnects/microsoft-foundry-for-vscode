@@ -464,12 +464,13 @@ LOW:
 4. **Iterative**: Start simple, add complexity gradually
 5. **Maintenance**: Continuous monitoring and optimization required
 
-## 📁 Resources
+## 📁 Additional Resources
 
-- [`production-deployment-guide.md`](./production-deployment-guide.md) - Detailed deployment instructions
-- [`monitoring-setup.md`](./monitoring-setup.md) - Monitoring configuration
-- [`workflow-examples/`](./workflow-examples/) - Complete N8N workflow exports
-- [`scaling-guide.md`](./scaling-guide.md) - Scaling strategies
+For production deployment, monitoring, and scaling strategies, refer to:
+- [Microsoft AI Foundry Documentation](https://learn.microsoft.com/azure/ai-studio/)
+- [N8N Workflow Documentation](https://docs.n8n.io/workflows/)
+- [N8N Production Best Practices](https://docs.n8n.io/hosting/scaling/)
+- [Level 4 N8N Integration Examples](../level-4-project-manager/n8n-integration-examples.md)
 
 ## 🎉 Congratulations!
 

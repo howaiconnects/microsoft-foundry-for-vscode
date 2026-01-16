@@ -254,7 +254,7 @@ Engage with other AI Foundry users. Share learnings and get help.
 **Documentation**:
 - [Tutorial Home](./README.md)
 - [Design Patterns](./DESIGN_PATTERNS.md)
-- [Agent Schema](../schema/agent/1.0.0/schema.json)
+- [Agent Schema](https://aka.ms/ai-foundry-vsc/agent/1.0.0)
 
 **Levels**:
 - [Level 1: Single Agent](./level-1-single-agent/)
