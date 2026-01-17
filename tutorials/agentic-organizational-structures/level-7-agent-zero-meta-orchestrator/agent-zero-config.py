@@ -44,8 +44,18 @@ class AIFoundryMetaOrchestrator:
         self._register_tools()
     
     def _register_tools(self):
-        """Register AI Foundry integration tools"""
+        """
+        Register AI Foundry integration tools with Agent Zero
         
+        Note: The actual Agent Zero API may differ. This implementation shows
+        the conceptual approach. Refer to Agent Zero documentation at:
+        https://www.agent-zero.ai/p/docs/
+        
+        Tool registration should follow Agent Zero's extension pattern.
+        """
+        
+        # Note: Decorator syntax shown here is conceptual
+        # Actual implementation would use Agent Zero's tool registration API
         @self.agent_zero.tool
         class AIFoundryDeploymentTool(Tool):
             """Tool for deploying agents to AI Foundry"""
@@ -66,10 +76,13 @@ class AIFoundryMetaOrchestrator:
                     config = f.read()
                 
                 # Deploy via Azure AI Foundry API
+                # Note: The actual API endpoint structure should be verified with
+                # Azure AI Foundry documentation. This is a conceptual example.
+                # See: https://learn.microsoft.com/azure/ai-studio/
                 endpoint = f"https://management.azure.com/subscriptions/{self.subscription_id}"
                 endpoint += f"/resourceGroups/{self.resource_group}"
                 endpoint += f"/providers/Microsoft.MachineLearningServices/workspaces/{self.project_name}"
-                endpoint += "/agents"
+                endpoint += "/agents"  # Actual endpoint may differ
                 
                 async with aiohttp.ClientSession() as session:
                     headers = {
@@ -144,10 +157,16 @@ class AIFoundryMetaOrchestrator:
                 
                 Returns:
                     base_id: Created base identifier
+                
+                TODO: Implement using Airtable API:
+                1. Create base via Airtable Meta API
+                2. Define tables and fields from schema
+                3. Set up permissions and sharing
+                4. Return base ID for subsequent operations
+                
+                See: https://airtable.com/developers/web/api/introduction
                 """
-                # Implementation would use Airtable API
-                # This is a placeholder showing the interface
-                pass
+                raise NotImplementedError("Implement with Airtable Meta API")
             
             async def configure_mcp_server(self, base_id: str, port: int = 3000):
                 """
@@ -159,10 +178,17 @@ class AIFoundryMetaOrchestrator:
                 
                 Returns:
                     server_url: MCP server URL
+                
+                TODO: Implement MCP server setup:
+                1. Install MCP server package
+                2. Configure with Airtable credentials and base ID
+                3. Start server on specified port
+                4. Verify connectivity
+                5. Return server URL for agent tool configuration
+                
+                See: https://modelcontextprotocol.io/
                 """
-                # Implementation would set up MCP server
-                # This is a placeholder showing the interface
-                pass
+                raise NotImplementedError("Implement MCP server configuration")
         
         @self.agent_zero.tool
         class N8NIntegrationTool(Tool):
@@ -178,10 +204,16 @@ class AIFoundryMetaOrchestrator:
                 
                 Returns:
                     workflow_id: Deployed workflow identifier
+                
+                TODO: Implement using N8N API:
+                1. Connect to N8N instance
+                2. Create workflow from definition
+                3. Activate workflow
+                4. Return workflow ID
+                
+                See: https://docs.n8n.io/api/
                 """
-                # Implementation would use N8N API
-                # This is a placeholder showing the interface
-                pass
+                raise NotImplementedError("Implement with N8N API")
             
             async def trigger_workflow(self, workflow_id: str, parameters: Dict):
                 """
@@ -193,10 +225,16 @@ class AIFoundryMetaOrchestrator:
                 
                 Returns:
                     execution_id: Workflow execution identifier
+                
+                TODO: Implement N8N workflow triggering:
+                1. POST to workflow webhook URL
+                2. Include parameters in request body
+                3. Return execution ID for tracking
+                4. Monitor execution status
+                
+                See: https://docs.n8n.io/workflows/
                 """
-                # Implementation would trigger N8N workflow
-                # This is a placeholder showing the interface
-                pass
+                raise NotImplementedError("Implement N8N workflow trigger")
     
     async def compare_architectures(
         self, 

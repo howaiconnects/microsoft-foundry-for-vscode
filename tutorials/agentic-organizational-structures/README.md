@@ -95,9 +95,6 @@ This tutorial covers several proven architectural patterns:
 4. **Team-Based Pattern** - Organized functional teams with leads
 5. **Event-Driven Pattern** - Workflow-triggered agent execution
 6. **Meta-Orchestration Pattern** - Agent Zero managing multiple architectures
-3. **Hierarchical Pattern** - Multi-level management structure
-4. **Team-Based Pattern** - Organized functional teams with leads
-5. **Event-Driven Pattern** - Workflow-triggered agent execution
 
 ## 🚀 Getting Started
 
