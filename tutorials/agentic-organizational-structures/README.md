@@ -59,6 +59,13 @@ Design enterprise-scale multi-team structures with team leads acting as middle-l
 
 Integrate AI agents with N8N for complete workflow automation and management.
 
+### [Level 7: Agent Zero Meta-Orchestrator](./level-7-agent-zero-meta-orchestrator/)
+**Complexity:** ⭐⭐⭐⭐⭐⭐ Advanced Expert  
+**Concepts:** Meta-orchestration, autonomous configuration, architecture comparison, self-optimization  
+**Tools:** Agent Zero framework, all previous integrations
+
+Use Agent Zero as a meta-orchestrator to autonomously configure, deploy, and compare all architectural patterns head-to-head.
+
 ## 🔧 Key Integrations Covered
 
 ### Airtable SDK & MCP
@@ -72,12 +79,22 @@ Integrate AI agents with N8N for complete workflow automation and management.
 - Building event-driven agentic systems
 - Managing workflow state and coordination
 
+### Agent Zero Framework
+- Meta-orchestration for managing multiple architectures
+- Autonomous configuration and deployment
+- Performance comparison and benchmarking
+- Self-optimizing agent systems
+
 ## 📊 Architecture Patterns
 
 This tutorial covers several proven architectural patterns:
 
 1. **Single Agent Pattern** - Basic autonomous agent
 2. **Orchestrator-Worker Pattern** - One coordinator, multiple workers
+3. **Hierarchical Pattern** - Multi-level management structure
+4. **Team-Based Pattern** - Organized functional teams with leads
+5. **Event-Driven Pattern** - Workflow-triggered agent execution
+6. **Meta-Orchestration Pattern** - Agent Zero managing multiple architectures
 3. **Hierarchical Pattern** - Multi-level management structure
 4. **Team-Based Pattern** - Organized functional teams with leads
 5. **Event-Driven Pattern** - Workflow-triggered agent execution

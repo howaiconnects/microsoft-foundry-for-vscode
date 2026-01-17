@@ -166,6 +166,48 @@ Input → Stage1 → Stage2 → Stage3 → Output
 
 ---
 
+### 7. Meta-Orchestration Pattern (Agent Zero)
+**When to Use**: Managing multiple architectural patterns simultaneously
+
+**Structure**:
+```
+        ┌─────────────────────┐
+        │   Agent Zero        │
+        │  Meta-Orchestrator  │
+        └──────────┬──────────┘
+                   │
+    ┌──────────────┼──────────────┐
+    │              │              │
+    ▼              ▼              ▼
+Level 1-2      Level 3-4      Level 5-6
+Architectures  Architectures  Architectures
+```
+
+**Characteristics**:
+- Autonomous configuration and deployment
+- Performance monitoring and comparison
+- Self-optimization capabilities
+- Multi-architecture management
+- Data-driven decision making
+
+**Best For**:
+- Architecture evaluation and selection
+- Head-to-head performance comparison
+- Continuous optimization
+- Large-scale system management
+- Research and development
+
+**Example**: Deploy and compare different architectures for same workload, automatically select optimal design
+
+---
+- Consensus systems
+- Multi-agent negotiation
+- Research and exploration
+
+**Example**: Multi-agent debate, collaborative problem-solving
+
+---
+
 ## 🧰 Component Types
 
 ### Orchestrators
