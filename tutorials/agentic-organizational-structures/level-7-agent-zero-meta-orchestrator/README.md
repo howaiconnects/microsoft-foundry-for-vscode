@@ -660,12 +660,52 @@ meta_orchestrator.optimize_for_cost(
 
 ## 🚀 Getting Started
 
-1. **Install Agent Zero** (see Step 1 above)
+1. **Install Agent Zero** (see [Deployment Guide](./DEPLOYMENT_GUIDE.md))
 2. **Configure for AI Foundry** (provide Azure credentials)
-3. **Define your use case** and requirements
-4. **Let Agent Zero select and deploy** optimal architecture
-5. **Monitor and compare** different approaches
-6. **Enable self-optimization** for continuous improvement
+3. **Set up repository access** (all branches and components)
+4. **Define your use case** and requirements
+5. **Let Agent Zero select and deploy** optimal architecture
+6. **Monitor progress** via Web UI, API, or dashboards
+7. **Enable self-optimization** for continuous improvement
+
+## 📋 Deployment Options
+
+Agent Zero can be deployed in multiple ways to suit your needs:
+
+### Docker Deployment (Recommended for Development/Testing)
+- Quick setup with `docker-compose`
+- Isolated environment
+- Easy monitoring with Web UI
+- See [Deployment Guide](./DEPLOYMENT_GUIDE.md#option-1-docker-deployment-recommended-for-developmenttesting)
+
+### Kubernetes Deployment (Recommended for Production)
+- High availability and auto-scaling
+- Production-grade monitoring
+- Multi-environment support
+- See [Deployment Guide](./DEPLOYMENT_GUIDE.md#option-2-kubernetes-deployment-recommended-for-production)
+
+### Accessing All Project Components
+
+Agent Zero needs access to:
+- **All repository branches**: Via Git clone or GitHub API
+- **Azure AI Foundry**: Service principal credentials
+- **Airtable databases**: API key and base access
+- **N8N workflows**: Webhook URLs and API keys
+
+Full configuration details in [Deployment Guide](./DEPLOYMENT_GUIDE.md#multi-branch-access-configuration)
+
+## 📊 Monitoring Progress
+
+Agent Zero provides multiple monitoring interfaces:
+
+1. **Web UI Dashboard** - Real-time visual monitoring at `http://localhost:8080`
+2. **REST API** - Programmatic access to status and metrics
+3. **Prometheus Metrics** - Time-series data for alerting
+4. **Grafana Dashboards** - Customizable visualizations
+5. **Log Monitoring** - Detailed execution logs
+6. **Notifications** - Slack/Email alerts for key events
+
+See [Deployment Guide](./DEPLOYMENT_GUIDE.md#-progress-monitoring) for detailed monitoring setup.
 
 ## ➡️ What's Next?
 
@@ -683,4 +723,5 @@ meta_orchestrator.optimize_for_cost(
 - [Agent Zero Official Site](https://www.agent-zero.ai/)
 - [Agent Zero GitHub](https://github.com/agent0ai/agent-zero)
 - [Agent Zero Documentation](https://www.agent-zero.ai/p/docs/get-started/)
-- [AI Foundry + Agent Zero Integration Guide](./integration-guide.md)
+- [Deployment Guide](./DEPLOYMENT_GUIDE.md) - Complete deployment instructions for Docker and Kubernetes
+- [Sample Implementation](./agent-zero-config.py) - Python code for AI Foundry integration
